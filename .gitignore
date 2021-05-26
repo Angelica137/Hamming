@@ -3,4 +3,5 @@ HammingJournal.pages
 
 .gradle
 
+# Ignore Gradle build output directory
 build
