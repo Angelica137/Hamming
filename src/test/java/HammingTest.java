@@ -10,6 +10,7 @@ public class HammingTest {
 	private String s1;
 	private String s2;
 	private String s3;
+	private String s4;
 
 	@Before
 	public void setup() {
@@ -17,16 +18,23 @@ public class HammingTest {
 		s1 = "GAGCCTACTAACGGGAT";
 		s2 = "CATCGTAATGACGGCCT";
 		s3 = "CATCGTAATGACGGCCTCATCGTAATGACGGCCT";
+		s4 = "GAGCCTACTAACGGGAT";
 
 	}
 
 	@Test
-	public void testSequencesMatch() {
+	public void testSequencesLengthSame() {
 		assertEquals("It is a match", hammingDistance.distance(s1, s2));
 	}
 
 	@Test
-	public void testExceptionNoMatch() {
+	public void testExceptionLengthDifferent() {
 		assertEquals("oooops", hammingDistance.distance(s1, s3));
+	}
+
+	// test strings match
+	@Test
+	public void testSequencesMatch() {
+		assertEquals("Distance is 0", hammingDistance.distance(s1, s4));
 	}
 }
