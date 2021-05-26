@@ -15,8 +15,8 @@ public class HammingTest {
 	public void setup() {
 		hammingDistance = new Hamming();
 		s1 = "GAGCCTACTAACGGGAT";
-		s2 = "GAGCCTACTAACGGGAT";
-		s3 = "CATCGTAATGACGGCCT";
+		s2 = "CATCGTAATGACGGCCT";
+		s3 = "CATCGTAATGACGGCCTCATCGTAATGACGGCCT";
 
 	}
 
