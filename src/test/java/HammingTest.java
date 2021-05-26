@@ -23,11 +23,6 @@ public class HammingTest {
 	}
 
 	@Test
-	public void testSequencesLengthSame() {
-		assertEquals("It is a match", hammingDistance.distance(s1, s2));
-	}
-
-	@Test
 	public void testExceptionLengthDifferent() {
 		assertEquals("oooops", hammingDistance.distance(s1, s3));
 	}
