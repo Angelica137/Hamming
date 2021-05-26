@@ -1,5 +1,5 @@
 public class Hamming {
-	public String helloTest() {
+	public String distance() {
 		return "Hello, world!";
 	}
 }
