@@ -32,4 +32,9 @@ public class HammingTest {
 	public void testSequencesMatch() {
 		assertEquals("Distance is 0", hammingDistance.distance(s1, s4));
 	}
+
+	@Test
+	public void testSequencesNoMatch() {
+		assertEquals("sad face", hammingDistance.distance(s1, s2));
+	}
 }
