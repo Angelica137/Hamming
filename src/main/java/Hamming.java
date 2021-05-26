@@ -1,9 +1,9 @@
 public class Hamming {
-	public String distance(String s1, String s2) throws Exception {
+	public String distance(String s1, String s2) {
 		if (s1.equals(s2)) {
 			return "It is a match";
 		} else {
-			throw new Exception("oooops");
+			return "oooops";
 		}
 
 	}

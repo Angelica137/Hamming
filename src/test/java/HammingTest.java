@@ -21,7 +21,12 @@ public class HammingTest {
 	}
 
 	@Test
-	public void testSequencesMatch() throws Exception {
+	public void testSequencesMatch() {
 		assertEquals("It is a match", hammingDistance.distance(s1, s2));
+	}
+
+	@Test
+	public void testExceptionNoMatch() {
+		assertEquals("oooops", hammingDistance.distance(s1, s3));
 	}
 }
