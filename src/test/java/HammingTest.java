@@ -35,6 +35,6 @@ public class HammingTest {
 
 	@Test
 	public void testSequencesNoMatch() {
-		assertEquals("sad face", hammingDistance.distance(s1, s2));
+		assertEquals("7", hammingDistance.distance(s1, s2));
 	}
 }
